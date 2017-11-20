@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LCInputKeyWordView">
+            <rect key="frame" x="0.0" y="0.0" width="307" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入验证码，以验证身份" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdN-Md-9Nv">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x86-wo-TZ2" customClass="WCLPassWordView">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="2T6-JT-NLg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="passWordNum">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="squareWidth">
+                            <real key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="pointRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="pointColor">
+                            <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="rectColor">
+                            <color key="value" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="x86-wo-TZ2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0l0-Bf-drc"/>
+                <constraint firstAttribute="trailing" secondItem="x86-wo-TZ2" secondAttribute="trailing" id="43K-7j-pw6"/>
+                <constraint firstItem="YdN-Md-9Nv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CcS-C4-0XY"/>
+                <constraint firstAttribute="trailing" secondItem="YdN-Md-9Nv" secondAttribute="trailing" id="QQh-4y-rIo"/>
+                <constraint firstAttribute="bottom" secondItem="x86-wo-TZ2" secondAttribute="bottom" id="T6g-JJ-VjK"/>
+                <constraint firstItem="YdN-Md-9Nv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iCM-kf-1sn"/>
+                <constraint firstItem="x86-wo-TZ2" firstAttribute="top" secondItem="YdN-Md-9Nv" secondAttribute="bottom" id="sRi-tg-RIk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="passWordView" destination="x86-wo-TZ2" id="zjD-tW-8xO"/>
+                <outlet property="title" destination="YdN-Md-9Nv" id="3Kf-gq-6fw"/>
+            </connections>
+            <point key="canvasLocation" x="-100.5" y="-75.5"/>
+        </view>
+    </objects>
+</document>

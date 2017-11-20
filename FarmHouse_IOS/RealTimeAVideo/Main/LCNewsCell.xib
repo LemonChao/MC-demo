@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="LCNewsCell">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="107"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="377" height="106"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="localVideo" translatesAutoresizingMaskIntoConstraints="NO" id="DVr-8C-5KP">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="DVr-8C-5KP" secondAttribute="height" multiplier="500:360" id="eaz-92-Ptn"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="旧时光" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPO-LT-dam">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="4N1-7B-gqx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="旧时光在那个树叶凋零的季节时光已不再任我们放肆个炎炎烈日的午后 我们已学会了妥协" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHw-zd-gm8">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38.5" id="jWK-yN-f0R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.22352941176470587" green="0.23529411764705882" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tHw-zd-gm8" firstAttribute="leading" secondItem="hPO-LT-dam" secondAttribute="leading" id="3jr-g6-q9b"/>
+                    <constraint firstItem="DVr-8C-5KP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4bN-5q-UkG"/>
+                    <constraint firstItem="hPO-LT-dam" firstAttribute="top" secondItem="DVr-8C-5KP" secondAttribute="top" constant="5" id="IYk-EL-KW1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hPO-LT-dam" secondAttribute="trailing" constant="10" id="Pts-2K-Fea"/>
+                    <constraint firstItem="hPO-LT-dam" firstAttribute="leading" secondItem="DVr-8C-5KP" secondAttribute="trailing" constant="15" id="duf-0c-p7Y"/>
+                    <constraint firstItem="DVr-8C-5KP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="f2H-tl-3oI"/>
+                    <constraint firstItem="DVr-8C-5KP" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="80:107" id="m17-ig-zdp"/>
+                    <constraint firstItem="tHw-zd-gm8" firstAttribute="top" secondItem="hPO-LT-dam" secondAttribute="bottom" constant="3" id="mDK-QG-LLz"/>
+                    <constraint firstItem="tHw-zd-gm8" firstAttribute="width" secondItem="hPO-LT-dam" secondAttribute="width" id="ohV-z4-IG2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-126" y="-264"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="localVideo" width="70" height="70"/>
+    </resources>
+</document>

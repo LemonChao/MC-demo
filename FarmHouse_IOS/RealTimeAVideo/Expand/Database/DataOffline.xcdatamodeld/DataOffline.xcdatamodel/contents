@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16E195" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="GatherPhoto" representedClassName="GatherPhoto" syncable="YES">
+        <attribute name="houseInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageContent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isUpload" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nhid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoArray" optional="YES" attributeType="Transformable" valueTransformerName="photoArray" syncable="YES"/>
+        <attribute name="reportNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reserveOne" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reserveTwo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="userid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="HouseHold" representedClassName="HouseHold" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="banknumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cardid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="familytype" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="income" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="maritalStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="masterid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nhid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="openbank" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reportNum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sum" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="zipCode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="NotificationNews" representedClassName="NotificationNews" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isRead" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="newsid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reserveOne" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="OfflineModel" representedClassName="OfflineModel" syncable="YES">
+        <attribute name="autoUpdate" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="farmerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="farmerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="houseInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isUpload" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="offlineArray" optional="YES" attributeType="Transformable" valueTransformerName="OfflineArray" syncable="YES"/>
+        <attribute name="reserveOne" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="GatherPhoto" positionX="-63" positionY="135" width="128" height="195"/>
+        <element name="HouseHold" positionX="-63" positionY="36" width="128" height="300"/>
+        <element name="NotificationNews" positionX="-63" positionY="135" width="128" height="165"/>
+        <element name="OfflineModel" positionX="-63" positionY="-18" width="128" height="165"/>
+    </elements>
+</model>

@@ -1,0 +1,20 @@
+UserDefault
+ {
+     "maxNewsid":"通知消息最大消息ID",
+     "networkState":0~5,
+     "appCurrentState":0~9,
+     "sessid":"7609981479891199957",
+     "userid":10017,
+     "isLogin":YES/NO,
+     "userInfo":{"id":10017,
+         "power":0,
+         "phone":"15378769701",
+         "name":"",
+         "province":"",
+         "city":"",
+         "county":"",
+         "address":"",
+         "sessid":"7609981479891199957"
+     }
+
+ }

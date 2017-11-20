@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="176" id="KGk-i7-Jjw" customClass="LCFounctionCell">
+            <rect key="frame" x="0.0" y="0.0" width="605" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="605" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="1130" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syZ-t2-ROQ">
+                        <state key="normal" title="报案" image="main_charge.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="functionButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zH1-Oc-8uE"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1131" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoB-SH-zZ7">
+                        <state key="normal" title="采集" image="main_caiji.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="functionButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dXG-q4-ZK1"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1132" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRg-Wt-7Ah">
+                        <state key="normal" title="查询" image="main_inquire.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="functionButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xau-X0-Kbt"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1133" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hhi-73-ihi">
+                        <state key="normal" title="保险" image="main_insurance.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="functionButtonClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FZd-Vm-3fU"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hhi-73-ihi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2Nv-p1-TBG"/>
+                    <constraint firstItem="Hhi-73-ihi" firstAttribute="width" secondItem="syZ-t2-ROQ" secondAttribute="width" id="3ZR-TV-go8"/>
+                    <constraint firstAttribute="bottom" secondItem="syZ-t2-ROQ" secondAttribute="bottom" id="A0O-TF-dEQ"/>
+                    <constraint firstItem="SoB-SH-zZ7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AEj-wt-v4p"/>
+                    <constraint firstItem="SoB-SH-zZ7" firstAttribute="width" secondItem="syZ-t2-ROQ" secondAttribute="width" id="ATa-Zx-hdk"/>
+                    <constraint firstItem="Hhi-73-ihi" firstAttribute="leading" secondItem="jRg-Wt-7Ah" secondAttribute="trailing" id="Ipr-Si-G1W"/>
+                    <constraint firstItem="syZ-t2-ROQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="M0W-Xi-ubm"/>
+                    <constraint firstAttribute="trailing" secondItem="Hhi-73-ihi" secondAttribute="trailing" id="XUK-kj-bKE"/>
+                    <constraint firstItem="jRg-Wt-7Ah" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gER-0z-6jq"/>
+                    <constraint firstItem="jRg-Wt-7Ah" firstAttribute="leading" secondItem="SoB-SH-zZ7" secondAttribute="trailing" id="ikC-zR-sas"/>
+                    <constraint firstItem="jRg-Wt-7Ah" firstAttribute="width" secondItem="syZ-t2-ROQ" secondAttribute="width" id="rre-SG-MfE"/>
+                    <constraint firstAttribute="bottom" secondItem="Hhi-73-ihi" secondAttribute="bottom" id="sGe-MW-tIW"/>
+                    <constraint firstAttribute="bottom" secondItem="SoB-SH-zZ7" secondAttribute="bottom" id="unV-u7-Gfw"/>
+                    <constraint firstItem="SoB-SH-zZ7" firstAttribute="leading" secondItem="syZ-t2-ROQ" secondAttribute="trailing" id="wVO-zK-xL7"/>
+                    <constraint firstItem="syZ-t2-ROQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xGY-tk-cCm"/>
+                    <constraint firstAttribute="bottom" secondItem="jRg-Wt-7Ah" secondAttribute="bottom" id="zbb-hs-UTf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-75" y="-103"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="main_caiji.png" width="42" height="42"/>
+        <image name="main_charge.png" width="42" height="42"/>
+        <image name="main_inquire.png" width="42" height="42"/>
+        <image name="main_insurance.png" width="42" height="42"/>
+    </resources>
+</document>

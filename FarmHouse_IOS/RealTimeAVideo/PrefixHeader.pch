@@ -1,0 +1,133 @@
+//
+//  PrefixHeader.pch
+//  RealTimeAVideo
+//
+//  Created by Lemon on 16/9/9.
+//  Copyright © 2016年 YiWanLian. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+/** C 底层编译总头文件 */
+#import "Cprogrammer.h"
+/** 应用全局头文件 */
+#import "Macros.h"
+#import "BaiduMobStat.h"       //百度统计
+
+#import "UIView+Toast.h"
+#import "UIButton+Utility.h"
+#import "NSObject+EXT.h"
+#import "UITableView+EXT.h"
+#import "UIColor+ColorUtil.h"
+#import "NSDate+Extension.h"
+#import "NSString+Extension.h"
+#import "SandBoxManager.h"              //沙盒文件管理
+#import "LCAFNetWork.h"                 //网络请求
+#import "LCTools.h"
+#import "LCAlertTools.h"                //弹窗
+#import "UIView+Frame.h"
+#import "UIView+EaseBlankPage.h"
+#import "UIImageView+WebCache.h"
+#import "LCBaseVC.h"
+#import "BaseViewController.h"
+#import "ActivityApp.h"
+#import "YYModel.h"
+#import "SSZipArchive.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "ReactiveCocoa.h"                   //rac
+#import <ReactiveCocoa/RACReturnSignal.h>
+
+
+//加入这个宏，可以省略所有 mas_ （除了mas_equalTo）
+#define MAS_SHORTHAND
+//加入这个宏，那么mas_equalTo就和equalTo一样的了
+#define MAS_SHORTHAND_GLOBALS
+#import "Masonry.h"
+
+#endif
+
+
+//
+
+#define METHODKEY   @"WB#)@F01"                             //method与3des加密的key
+#define METHOD      @"Method"                               //接口加密私钥字符串
+#define PARAMs      @"Params"                               //参数加密的串
+#define SIGN        @"Sign"                                 //用appSecret与所有参数进行签名的结果
+
+#define NORMAL_IMAGE              @"normalpicture"            //normal picture
+#define SELECTED_IMAGE            @"selectedpicture"          //selected picture
+#define ITEM_TITLE                @"itemtitle"                //item title
+
+
+
+//#define DEVICEID                   698525                          //设备ID
+#define SIGNAL_PORT                8009                            //网络端口号
+//#define SERVER_IP                  @"47.94.154.160"                 //北京测试中心服务器地址 BJ:36.111.32.33
+#define SERVER_IP                  @"ewanlan-nx.com"               //正式中心服务器地址 ewanlan-nx.com
+#define AUDIO_PORT                 1                               //音频声道
+#define VIDEO_PORt                 2                               //视频通道
+#define SYSLOG_LEVEL               34                              //
+
+
+#define NOTIFICATION_NAME_CBINFO   @"notificationNameCBInfo"       //name of post notification
+
+/// 设备号
+#define KEY_USERNAME_PASSWORD      @"com.company.app.usernamepassword"
+
+#define KEY_USERNAME               @"com.company.app.username"
+
+#define KEY_PASSWORD               @"com.company.app.password"
+
+#define KEY_IMGFILE                @"chargeImgFile"
+
+/** 请求接口 */
+//#define BASEURL                    @"http://www.ewanlan-nx.com:10038/WebServer/"
+//#define BASEURL                    @"http://36.111.32.33:10038/WebServer/"
+#define BASEURL                    @"http://"SERVER_IP":10038/WebServer"
+
+#define ewlWebServerUser           @"user"
+#define ewlWebServerReport         @"report"
+
+
+/*********************************  用户登陆信息   ********************/
+#define ISLOGIN                    @"isLogin"                    //是否登陆
+#define USERINFO                   @"userInfo"                   //user login infomation
+#define USERID                     @"userid"                     //user id
+#define SESSID                     @"sessid"                     //sessid 验证身份
+#define STATE                      @"state"
+#define DATA                       @"data"                                 
+#define MESSAGE                    @"message"
+#define APPCURRENTSTATE            @"appCurrentState"            //与定损服务器连接的当前状态
+
+/*********************************  App颜色   ********************/
+
+#define MainColor                  [UIColor colorwithHex:@"0x7dc887"]  //主题色草绿
+#define BGColor                    [UIColor colorwithHex:@"0xD6D6D6"]  //背景灰色
+#define TabBGColor                 [UIColor colorwithHex:@"0xf0f0f0"]  //TabView背景灰色
+
+// 弱引用
+#define WeakObj(o) autoreleasepool{} __weak typeof(o) o##Weak = o;
+
+#define UDSobjectForKey(fmt, ...)               [[NSUserDefaults standardUserDefaults] objectForKey:[NSString stringWithFormat:(fmt), ##__VA_ARGS__]]
+
+/** 求C中数组长度,如果是字节数组，这些方法全部无效，字节数组中间就可能出现\0 */
+#define Array_Len(array)   (sizeof(array) / sizeof(array[0]))
+#define StrFormat(fmt, ...)  [NSString stringWithFormat:(fmt), ##__VA_ARGS__]         /// 任意格式转化成字符串
+
+
+//在Debug情况下才会打印
+#ifdef DEBUG
+#   define DLog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
+#   define ELog(err) {if(err) DLog(@"%@", err)}
+#else
+#   define DLog(...)
+#   define ELog(err)
+#endif
+
+
+#endif /* PrefixHeader_pch */
